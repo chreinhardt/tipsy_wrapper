@@ -2,7 +2,7 @@
 all: libtipsy.a
 
 libtipsy.a: tipsy.o
-	$(AR) rcs $@ $<
+	$(AR) -ltirpc rcs $@ $<
 
 clean:
 	rm -f libtipsy.a *.o
